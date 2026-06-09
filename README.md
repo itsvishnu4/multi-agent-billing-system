@@ -1,5 +1,5 @@
 # Multi Agent Billing System
-A multi-agent system built with LangGraph that automates health insurance claims processing. Cover eligibility verification, claim creation, and audit.
+A multi-agent system built with LangGraph that automates health insurance claims processing. Covers eligibility verification, claim creation, and audit.
 
 ## Details
 Agent 1: Eligibility Verifier - checks whether the patient's insurance covers the requested service before any claim is filed
