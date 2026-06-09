@@ -4,7 +4,7 @@ A multi-agent system built with LangGraph that automates health insurance claims
 ## Details
 Agent 1: Eligibility Verifier - checks whether the patient's insurance covers the requested service before any claim is filed
 
-If the patient is ineligible, the piple stops early.
+If the patient is ineligible, the pipeline stops early.
 
 Agent 2: Claim Creator - builds a structured insruance claim with CPT and ICD codes
 
