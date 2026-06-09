@@ -20,7 +20,11 @@ Pydantic - structured output validation
 
 ## Setup
 1 Clone this repo
-2 Create a .env file wiht your own API key: API_KEY=your_key_here
+
+2 Create a .env file with your own API key: API_KEY=your_key_here
+
 3 Install dependencies: pip install -r requirements.txt
+
 4 Run python main.py
+
 5 NEVER commit .env file. It contains your personal API key.
