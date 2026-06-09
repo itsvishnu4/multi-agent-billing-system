@@ -14,8 +14,11 @@ If the claim is approved, it is saved as a JSON file.
 
 ## Tech Stack
 LangGraph - agent orchestration and state graph
+
 LangChain - LLM interface
+
 Anthropic Claude (Sonnet 4-6) - underlying model for all agents
+
 Pydantic - structured output validation
 
 ## Setup
