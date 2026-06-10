@@ -27,7 +27,9 @@ SQLite - local data storage for patients and claims; easy to use since no setup 
 1 Clone this repo
 
 2 Create the virtual environment: 
+
 python -m venv .venv 
+
 source .venv/bin/activate on Mac
 
 3 Install dependencies: pip install -r requirements.txt on Mac
