@@ -34,11 +34,11 @@ source .venv/bin/activate on Mac
 
 3 Install dependencies: pip install -r requirements.txt on Mac
 
-4 Create a .env file with your own API key: API_KEY=your_key_here
+4 Make a copy of the .env.example file and add your own API key: API_KEY=your_key_here
 
 5 Run python main.py
 
-6 NEVER commit .env file. It contains your personal API key.
+6 NEVER commit the .env file. It contains your personal API key.
 
 ## How to Use
 On the first run, enter patient and service information. This info will be saved to a local billing.db file by member ID. On future runs, entering the same member ID will allow you to reuse the saved data instead of re-entering everything.
