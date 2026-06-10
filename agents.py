@@ -8,23 +8,16 @@ llm = init_chat_model("anthropic:claude-sonnet-4-6")
 
 
 class EligibilityResult(BaseModel):
-    verdict: Literal["ELIGIBLE", "INELIGIBLE"] = Field(
-        ..., description="Whether the patient's insurance covers the requested service")
-    reason: str = Field(...,
-                        description="Clear explanation of the eligibility decision")
-    prior_auth_required: bool = Field(...,
-                                      description="Whether prior authorization is needed")
-    coverage_gaps: list[str] = Field(
-        default_factory=list, description="Any coverage risks or gaps found")
+    verdict: Literal["ELIGIBLE", "INELIGIBLE"] = Field(..., description="Whether the patient's insurance covers the requested service")
+    reason: str = Field(..., description="Clear explanation of the eligibility decision")
+    prior_auth_required: bool = Field(..., description="Whether prior authorization is needed")
+    coverage_gaps: list[str] = Field(default_factory=list, description="Any coverage risks or gaps found")
 
 
 class AuditResult(BaseModel):
-    verdict: Literal["APPROVED", "NEEDS CORRECTION"] = Field(
-        ..., description="Whether the claim passes audit or requires fixes")
-    issues: list[str] = Field(default_factory=list,
-                              description="List of issues found, if any")
-    corrected_claim: Optional[dict] = Field(
-        None, description="The corrected claim JSON if fixes were applied")
+    verdict: Literal["APPROVED", "NEEDS CORRECTION"] = Field(..., description="Whether the claim passes audit or requires fixes")
+    issues: list[str] = Field(default_factory=list, description="List of issues found, if any")
+    corrected_claim: Optional[dict] = Field(None, description="The corrected claim JSON if fixes were applied")
 
 
 # replace with real payer API (e.g. Availity, Change Healthcare)
